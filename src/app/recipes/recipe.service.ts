@@ -43,6 +43,10 @@ export class RecipeService {
         return this.recipes.slice(); // slice: return array copy
     }
 
+    getRecipe(index: number) {
+      return this.recipes.slice()[index];
+    }
+
     addIngredientsToShoppingList(ingredients: Ingredient[]) {
         this.shoppinglistService.addIngredients(ingredients);
     }
